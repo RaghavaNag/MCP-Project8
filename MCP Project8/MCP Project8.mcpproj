@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3a7ee831-4564-47d1-884a-2566ef286c4b}</ProjectGuid>
+    <Name>MCP Project8</Name>
+    <RootNamespace>MCP Project8</RootNamespace>
+    <VSIDVersion>4</VSIDVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>.\</OutputPath>
+    <MCPDebugMode>TADS Commands</MCPDebugMode>
+    <MCPBuildType>Default</MCPBuildType>
+    <MCPOutputFileName />
+    <MCPOutputFilePath />
+    <FileEquate />
+    <MCPJobFilePath />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>.\</OutputPath>
+    <MCPBuildType>Default</MCPBuildType>
+    <MCPOutputFileName />
+    <MCPOutputFilePath />
+    <FileEquate />
+    <MCPJobFilePath />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="TESSEQ.sqd_m">
+      <PatchMode>False</PatchMode>
+      <RelativePath>??ECCSG/USERMAST/&lt;MYUSERCODE&gt;/TESSEQ</RelativePath>
+      <SeqDataMarkID>True</SeqDataMarkID>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
